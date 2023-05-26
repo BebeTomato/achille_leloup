@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import sys
+
 class Calculator:
     def __init__(self):
         self.memory = 0
@@ -41,3 +44,18 @@ class Calculator:
 
     def get_memory(self):
         return self.memory
+
+#print for the tests
+calc = Calculator()
+result = calc.add(int(sys.argv[1]), int(sys.argv[2]))
+print(result)
+result = calc.subtract(int(sys.argv[1]), int(sys.argv[2]))
+print(result)
+result = calc.multiply(int(sys.argv[1]), int(sys.argv[2]))
+print(result)
+result = calc.divide(int(sys.argv[1]), int(sys.argv[2]))
+print(result)
+result = calc.power(int(sys.argv[1]), int(sys.argv[2]))
+print(result)
+"""result = calc.sqrt(int(sys.argv[1]), int(sys.argv[2]))
+print(result)"""
